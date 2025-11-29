@@ -40,7 +40,8 @@
     height: auto;
     display: block;
     border-radius: 6px;
-  }
+    max-width: 100%; height: auto; display: block; 
+   }
 
   a {
     color: #4fc3f7;
@@ -100,7 +101,6 @@
   }
   /* CSS:BASE-END */
 
-
   /* =========================================================
      CSS:HERO — Hero 區樣式
      ========================================================= */
@@ -118,9 +118,8 @@
   .hero-image {
     margin: 2rem auto 0;
     max-width: 420px;
-  }
+  }  
   /* CSS:HERO-END */
-
 
   /* =========================================================
      CSS:ABOUT — About 區樣式
@@ -128,9 +127,9 @@
   /* CSS:ABOUT-START */
   .section-about {
     background-color: #111b27;
+    text-align: center;
   }
   /* CSS:ABOUT-END */
-
 
   /* =========================================================
      CSS:SKILLS — Skills 區樣式
@@ -141,7 +140,6 @@
   }
   /* CSS:SKILLS-END */
 
-
   /* =========================================================
      CSS:PROJECTS — Projects 區樣式
      ========================================================= */
@@ -151,7 +149,6 @@
   }
   /* CSS:PROJECTS-END */
 
-
   /* =========================================================
      CSS:CONTACT — Contact 區樣式
      ========================================================= */
@@ -160,7 +157,6 @@
     background-color: #0f1a26;
   }
   /* CSS:CONTACT-END */
-
 
   /* =========================================================
      CSS:RWD — 手機優先 RWD
@@ -202,7 +198,6 @@
     </div>
   </header>
 
-
   <!-- ===================== Main ===================== -->
   <main>
 
@@ -213,15 +208,13 @@
     <section id="hero" class="section section-hero" aria-labelledby="hero-heading">
       <div class="container">
 
-        <h1 id="hero-heading" class="hero-title">這裡是個人網站的 Hero 主視覺區（占位內容）</h1>
+        <h1 id="hero-heading" class="hero-title">這裡是個人網站的 Hero 主視覺區</h1>
 
-        <p>此區將會放置一句話自我介紹、核心角色（例如 Frontend Developer），以及行動呼籲按鈕等內容。</p>
-        <p>目前是占位文字，之後會用 Section SDD 的 Prompt 產生正式 Hero 區版面與文案。</p>
-        <p>請開發者記得：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+        <p>歡迎來到我的作品與簡介頁面，此為網站骨架階段的占位區塊，未來會放上簡短自我介紹、主職與行動呼籲(例如：瀏覽作品集或下載履歷)</p>
 
         <img 
-          class="hero-image"
-          src="https://source.unsplash.com/800x600/?developer,laptop"
+         class="hero-image"
+          src="https://media.istockphoto.com/id/2217080108/photo/hands-of-a-programmer-types-on-a-laptop-displaying-programming-code-symbolizing-coding-tech.jpg?s=1024x1024&w=is&k=20&c=7IbuP4tAi1kpRyM_yxxvRhLZfeFOXa5n1kVwemzWTGc="
           alt="在電腦前撰寫程式碼的前端工程師示意照片"
           loading="lazy">
 
@@ -230,24 +223,18 @@
     <!-- SECTION:HERO-END -->
 
 
-
     <!-- =========================================================
          SECTION: ABOUT
          ========================================================= -->
     <!-- SECTION:ABOUT-START -->
     <section id="about" class="section section-about" aria-labelledby="about-heading">
       <div class="container">
-        <h2 id="about-heading" class="section-title">關於我（占位內容）</h2>
-        <p>這裡是 About 區的占位內容。未來會使用 Section SDD 產生正式的圖文排版、完整自我介紹與個人背景描述。</p>
-        <p>請開發者注意：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
-        <img 
-          src="https://source.unsplash.com/800x600/?workspace,developer"
-          alt="開發者工作環境的示意照片"
-          loading="lazy">
+        <h2 id="about-heading" class="section-title">關於我</h2>
+        <p>這裡是 About 區的占位內容。</p>
+        <p>未來會使用 Section SDD 產生正式的圖文排版、完整自我介紹與個人背景描述。</p>
       </div>
     </section>
     <!-- SECTION:ABOUT-END -->
-
 
 
     <!-- =========================================================
@@ -256,13 +243,12 @@
     <!-- SECTION:SKILLS-START -->
     <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
       <div class="container">
-        <h2 id="skills-heading" class="section-title">技能（占位內容）</h2>
+        <h2 id="skills-heading" class="section-title">技能</h2>
         <p>此區將列出前端技能、工具、框架或其他專業能力。現在為占位文字。</p>
-        <p>之後會用 Section SDD 的 Prompt 產生新的 section，請開發者將整段新程式碼放在這兩個註解中間來替換。</p>
+        <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
       </div>
     </section>
     <!-- SECTION:SKILLS-END -->
-
 
 
     <!-- =========================================================
@@ -271,13 +257,12 @@
     <!-- SECTION:PROJECTS-START -->
     <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
       <div class="container">
-        <h2 id="projects-heading" class="section-title">作品集（占位內容）</h2>
+        <h2 id="projects-heading" class="section-title">作品集</h2>
         <p>此區將展示代表性作品、連結、縮圖等。現在是占位內容。</p>
-        <p>請開發者記得：未來會用 Section SDD 產生新的 section，請將新的 section 程式碼整段貼在這兩個註解中間，覆蓋掉目前的內容。</p>
+        <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
       </div>
     </section>
     <!-- SECTION:PROJECTS-END -->
-
 
 
     <!-- =========================================================
@@ -286,10 +271,10 @@
     <!-- SECTION:CONTACT-START -->
     <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
       <div class="container">
-        <h2 id="contact-heading" class="section-title">聯絡我（占位內容）</h2>
+        <h2 id="contact-heading" class="section-title">聯絡我</h2>
 
         <p>這裡會放置 Email、LinkedIn、GitHub 等聯絡方式，目前是占位文字。</p>
-        <p>之後會使用 Section SDD 的 Prompt 產生完整、正式的 Contact 區。請開發者將新程式碼整段貼在這兩個註解中間取代。</p>
+        <p>歡迎透過以下方式與我取得聯繫：</p>
 
         <p>
           <a href="mailto:hello@example.com">hello@example.com</a><br>
@@ -301,7 +286,6 @@
     <!-- SECTION:CONTACT-END -->
 
   </main>
-
 
   <!-- ===================== Footer ===================== -->
   <footer class="section">
